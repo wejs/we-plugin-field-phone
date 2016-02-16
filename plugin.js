@@ -16,8 +16,9 @@ module.exports = function loadPlugin(projectPath, Plugin) {
 
   plugin.fieldCellSetValue = function fieldCellSetValue(fieldName) {
     return function setCellValue(val) {
-      if (val) {
-        this.setDataValue(fieldName, phone(val)[0]);
+      var v = phone(val);
+      if (v && v[0]) {
+        this.setDataValue(fieldName, v[0]);
       } else {
         this.setDataValue(fieldName, val);
       }
@@ -32,8 +33,6 @@ module.exports = function loadPlugin(projectPath, Plugin) {
         throw new Error('we-plugin-field-phone:phone.is.invalid');
       }
     }
-
-
   }
 
   return plugin;
