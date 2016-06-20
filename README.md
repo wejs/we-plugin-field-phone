@@ -1,8 +1,14 @@
 # we-plugin-field-phone
 
-> Plugin to add phone fields in we.js project
+Plugin to add phone fields in we.js project
 
-# Features
+## Installation
+
+```sh
+we i we-plugin-field-phone
+```
+
+## Features
 
 ## Form fields:
 
@@ -10,14 +16,10 @@
   type: "phone/cell"
 ```
 
-## Model validations:
-
-
-
 # Links
 
-> * We.js site: http://wejs.org
+- We.js site: http://wejs.org
 
-#Copyright and license
+## License
 
-Under [the MIT license](LICENSE).
+Under [the MIT license](https://github.com/wejs/we/blob/master/LICENSE.md).
